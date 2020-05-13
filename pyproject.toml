@@ -44,8 +44,8 @@ use_parentheses='True'
 #force_single_line  #Would override mult-line_output
 #force_grid_wrap    #Would override mult-line_output
 # Sections ------------------
-default_section="THIRDPARTY"
 known_datascience=['pandas', 'numpy', 'scipy']
+known_third_party = ["bs4", "colorama", "dotenv", "requests"]
 import_heading_stdlib="Standard Library ---------------------------------------------------------------------"
 import_heading_thirdparty="Third Party --------------------------------------------------------------------------"
 import_heading_datascience="Data Science"
@@ -125,7 +125,12 @@ from-stdin="no"
 [tool.pylint.message_control]
 confidence="HIGH, INFERENCE, INFERENCE_FAILURE, UNDEFINED"
 enable=""
-disable=""
+disable="""
+    bad-continuation,
+    no-else-return,
+    too-few-public-methods,
+    import-error
+"""
 
 [tool.pylint.reports]
 output-format="text"
@@ -145,7 +150,7 @@ logging-modules="logging"
 [tool.pylint.spelling]
 spelling-dict="en_US" # Requires pyenchant to be installed
 max-spelling-suggestions="0"
-spelling-ignore-words=""
+spelling-ignore-words="CSV, br, HTML, html, URL, url, enum"
 spelling-private-dict-file=""
 spelling-store-unknown-words="no"
 
@@ -198,7 +203,7 @@ argument-naming-style="snake_case"
 # argument-rgx=
 attr-naming-style="snake_case"
 # attr-rgx=
-class-attribute-naming-style="snake_case"
+class-attribute-naming-style="any"
 # class-attribute-rgx=
 class-naming-style="PascalCase"
 # class-rgx=

@@ -19,3 +19,5 @@ repos:
     rev: pylint-2.5.2
     hooks:
       - id: pylint
+        additional_dependencies:
+          - pyenchant~=3.0.1

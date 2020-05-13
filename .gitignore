@@ -5,3 +5,6 @@
 
 # Jupyter Notebooks Checkpoints
 .ipynb_checkpoints
+
+# Data
+/data
