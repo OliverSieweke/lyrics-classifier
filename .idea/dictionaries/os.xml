@@ -2,10 +2,13 @@
   <dictionary name="os">
     <words>
       <w>autodoc</w>
+      <w>dataframe</w>
       <w>dependabot</w>
       <w>docformatter</w>
+      <w>expanddim</w>
       <w>genindex</w>
       <w>isort</w>
+      <w>meth</w>
       <w>modindex</w>
       <w>noninfringement</w>
       <w>pyenchant</w>
@@ -13,6 +16,10 @@
       <w>quickstart</w>
       <w>sieweke</w>
       <w>toctree</w>
+      <w>uniformization</w>
+      <w>uniformize</w>
+      <w>uniformized</w>
+      <w>wuzzy</w>
     </words>
   </dictionary>
 </component>

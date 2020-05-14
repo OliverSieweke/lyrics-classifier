@@ -7,7 +7,7 @@ pages.
 
 .. note::
     The functionality specific to `lyrics.com` page is contained in
-    :py:mod:`lyrics_com`
+    :mod:`lyrics_com`
 """
 # Standard Library ---------------------------------------------------------------------
 import csv
