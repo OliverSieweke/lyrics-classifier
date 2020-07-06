@@ -1,6 +1,6 @@
 requests~=2.23.0
 beautifulsoup4~=4.9.0
-python-dotenv~=0.13.0
+python-dotenv~=0.14.0
 colorama~=0.4.3
 
 
