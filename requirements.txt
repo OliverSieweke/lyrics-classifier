@@ -4,7 +4,7 @@ python-dotenv~=0.13.0
 colorama~=0.4.3
 
 
-scikit-learn~=0.23.0
+scikit-learn~=0.24.0
 
 pandas~=1.0.3
 
